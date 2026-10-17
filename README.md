@@ -28,7 +28,7 @@ PawConnect is an enterprise-grade full-stack MERN application that connects lovi
 | **Payments & Files** | Stripe SDK (Test Mode / Checkout), Multer image upload pipeline |
 | **Notifications** | Nodemailer (automated simulation fallback for development) |
 | **API Docs & Testing** | Swagger UI Express / OpenAPI 3.0, Jest, Supertest |
-| **DevOps & Containers** | Docker, Multi-Stage Nginx Build, Docker Compose, GitHub Actions CI |
+| **CI / Automation** | GitHub Actions Automated Testing & Build Workflow |
 
 ---
 
@@ -70,8 +70,8 @@ For quick evaluation, PawConnect includes seeded demo accounts with complete rea
 
 ```bash
 # Clone the repository
-git clone https://github.com/UJJWAL-7777/RescueProject.git
-cd RescueProject
+git clone https://github.com/UJJWAL-7777/PawConnectProject.git
+cd PawConnectProject
 
 # Install backend packages
 cd backend
@@ -153,20 +153,6 @@ PASS tests/pets.test.js
 Test Suites: 2 passed, 2 total
 Tests:       8 passed, 8 total
 ```
-
----
-
-## 🐳 Docker & Docker Compose Deployment
-
-Run the entire multi-container architecture (MongoDB 7, Node backend, Nginx frontend) with one command:
-
-```bash
-docker-compose up --build
-```
-
-- Web Application: `http://localhost:80`
-- REST API: `http://localhost:5000`
-- MongoDB: `localhost:27017`
 
 ---
 
